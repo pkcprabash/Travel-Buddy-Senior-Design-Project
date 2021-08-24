@@ -24,7 +24,7 @@
 
 
     <!-- Map key please replace it with your own key -->
-    <string name="google_map_api_key"> AIzaSyBfGY2Yp4pU-pb-E01AG6p6q9BBts2Q_j0 </string>
+    <string name="google_map_api_key"> YOUR_API_KEYS</string>
     <string name="google_places_base_url"> https://maps.googleapis.com/maps/api/place/nearbysearch/json? </string>
     <string name="photo_url"> https://maps.googleapis.com/maps/api/place/photo? </string>
 
