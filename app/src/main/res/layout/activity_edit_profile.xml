@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pic"
+    tools:context=".EditProfile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/changePic"
+            android:layout_width="109dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="92dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="394dp"
+            android:layout_height="234dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="1dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/changePic">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/fullNa"
+                    android:layout_width="251dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="62dp"
+                    android:layout_marginBottom="129dp"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="Full Name"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/emailAd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginEnd="62dp"
+                    android:layout_marginBottom="73dp"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="Email Address"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/fullNa" />
+
+                <EditText
+                    android:id="@+id/PhoneNu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginEnd="62dp"
+                    android:layout_marginBottom="14dp"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="Phone Number"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/emailAd" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="409dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="1dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="199dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginEnd="93dp"
+                    android:layout_marginBottom="58dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Save"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.652" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pict"
+    tools:context=".Profile">
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/Graisy"
+        android:fontFamily="serif-monospace"
+        android:text="Delete Account"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetPassword"
+        tools:ignore="OnClick" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="109dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="96dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Fullname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Full Name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name_image"
+        app:layout_constraintTop_toBottomOf="@+id/name_holder" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Email Address"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/email_image"
+        app:layout_constraintTop_toBottomOf="@+id/email_holder" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Phone Number"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phone_image"
+        app:layout_constraintTop_toBottomOf="@+id/phone_holder" />
+
+    <Button
+        android:id="@+id/resetPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/teal_500"
+        android:fontFamily="serif-monospace"
+        android:text="Change Password"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ModifyProfile"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/name_holder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:text="Full Name"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/name_image"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+    <TextView
+        android:id="@+id/email_holder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Email Address"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/email_image"
+        app:layout_constraintTop_toTopOf="@+id/email_image" />
+
+    <ImageView
+        android:id="@+id/name_image"
+        android:layout_width="31dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage"
+        app:layout_constraintVertical_bias="0.06"
+        app:srcCompat="@mipmap/name" />
+
+    <ImageView
+        android:id="@+id/email_image"
+        android:layout_width="37dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fullname"
+        app:srcCompat="@mipmap/email" />
+
+    <ImageView
+        android:id="@+id/phone_image"
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:srcCompat="@mipmap/phone" />
+
+    <TextView
+        android:id="@+id/phone_holder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Phone Number"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/phone_image"
+        app:layout_constraintTop_toTopOf="@+id/phone_image" />
+
+    <Button
+        android:id="@+id/ModifyProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="serif-monospace"
+        android:text="Modify Profile"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        app:layout_constraintVertical_bias="0.846" />
+
+    <TextView
+        android:id="@+id/profile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/aladin"
+        android:text="Welcome to your Profile"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/profileImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <TextView
+        android:id="@+id/verifymg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="10dp"
+        android:text="Please, Verify your Email"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/verifyBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <Button
+        android:id="@+id/verifyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Verify Your Email"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ModifyProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ChangeImage"
+        android:layout_width="40dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="180dp"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/name_holder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="45dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="32dp"
+        android:onClick="back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

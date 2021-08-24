@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:text="Update Note"
+    android:gravity="center"
+    android:background="@drawable/option_design"
+    android:textColor="@color/black"
+    android:padding="10dp"
+    android:textSize="18sp"
+    android:textStyle="bold"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+        <EditText
+            android:id="@+id/mEditTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+        <EditText
+            android:id="@+id/mEditTextContext"
+            android:layout_width="382dp"
+            android:layout_height="168dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Context"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:background="@drawable/option_design"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/option_design"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

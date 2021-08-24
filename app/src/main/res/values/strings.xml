@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name"> TravelBuddy </string>
+    <string name="categories"> Categories </string>
+    <string name="gpsStatus"> Please enable your device gps. </string>
+
+    <!-- places type names  -->
+    <string name="restaurants"> Restaurants </string>
+    <string name="movie_theater"> Movie Theater </string>
+    <string name="karaoke"> Karaoke </string>
+    <string name="museum"> Museums </string>
+    <string name="theme_parks"> Theme Park </string>
+    <string name="parks"> Parks </string>
+    <string name="gyms"> Gyms </string>
+
+    <!-- google places keywords please don't change this -->
+    <string name="restaurants_key"> restaurant </string>
+    <string name="movie_theater_key"> movie_theater </string>
+    <string name="karaoke_key1"> night_club </string>
+    <string name="karaoke_key2"> bar </string>
+    <string name="museum_key"> museum </string>
+    <string name="theme_parks_key"> amusement_park </string>
+    <string name="parks_key"> park </string>
+    <string name="gym_key"> gym </string>
+
+
+    <!-- Map key please replace it with your own key -->
+    <string name="google_map_api_key"> AIzaSyBfGY2Yp4pU-pb-E01AG6p6q9BBts2Q_j0 </string>
+    <string name="google_places_base_url"> https://maps.googleapis.com/maps/api/place/nearbysearch/json? </string>
+    <string name="photo_url"> https://maps.googleapis.com/maps/api/place/photo? </string>
+
+    <!-- Remove or change this placeholder text -->
+    <string name="hello_blank_fragment"> Hello blank fragment </string>
+    <string name="near_hotels"> Near Hotels </string>
+    <string name="search_hotels"> Search Hotels </string>
+
+    <!-- Search API -->
+    <string name="search_api_url"> https://maps.googleapis.com/maps/api/place/findplacefromtext/json?inputtype=textquery&amp;fields=geometry,name </string>
+
+    <!---place details APi  -->
+    <string name="google_map_place_details_api"> https://maps.googleapis.com/maps/api/place/details/json? </string>
+
+</resources>
